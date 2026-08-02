@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What type of coffee do you serve?",
+    "answer": "We use Origin Beija Flor, a Brazil natural processed coffee, as our house blend — alongside a rotating selection of guest roasters.",
+    "draft": false
+  },
+  {
+    "question": "Do you have alternative milks?",
+    "answer": "Yes of course — we use Estate Dairy full-fat & semi-skimmed milk, and Oatly Oat Milk. No charge for alternative milks.",
+    "draft": false
+  },
+  {
+    "question": "Do you have wifi?",
+    "answer": "PLACEHOLDER — please confirm wifi availability and whether there's a password to share.",
+    "draft": true
+  },
+  {
+    "question": "Do you take card only, or cash too?",
+    "answer": "PLACEHOLDER — please confirm accepted payment methods.",
+    "draft": true
+  },
+  {
+    "question": "Can we book a table for a group?",
+    "answer": "PLACEHOLDER — please confirm if bookings are possible and how (phone, email, walk-in only).",
+    "draft": true
+  },
+  {
+    "question": "Any allergen info available?",
+    "answer": "Yes — please let our team know of any allergies when ordering and we'll talk you through the menu.",
+    "draft": false
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "tagline": "'li'tn.' – meaning small in Swedish.",
+  "hours": [
+    { "days": "Mon – Fri", "time": "7:30am – 3pm" },
+    { "days": "Sat", "time": "8:30am – 4pm" },
+    { "days": "Sun", "time": "9:30am – 4pm" }
+  ],
+  "instagram_handle": "PLACEHOLDER",
+  "instagram_url": "#",
+  "phone": "PLACEHOLDER",
+  "email": "PLACEHOLDER",
+  "address_line1": "1b Fairhazel Gardens",
+  "address_line2": "NW6 3QE",
+  "address_line3": "South Hampstead",
+  "draft": true
+}
