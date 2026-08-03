@@ -295,7 +295,7 @@ footer.site-footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 56px;
 }
 
@@ -304,13 +304,14 @@ footer.site-footer {
   font-weight: 500;
   font-size: 31px;
   letter-spacing: 0em;
-  margin: 0 0 20px;
+  line-height: 1.6em;
+  margin: 0 0 40px;
 }
 
 .footer-col h4 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0em;
   line-height: 1.4em;
   margin: 0 0 14px;
@@ -320,7 +321,7 @@ footer.site-footer {
   display: grid;
   grid-template-columns: 68px 14px 1fr;
   font-family: 'Instrument Serif', serif;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.03em;
   line-height: 1.4em;
   color: var(--navy);
@@ -329,7 +330,7 @@ footer.site-footer {
 
 .footer-col p, .footer-col a {
   font-family: 'Instrument Serif', serif;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.03em;
   line-height: 1.4em;
   margin: 0 0 4px;
@@ -342,7 +343,7 @@ footer.site-footer {
 
 .footer-tagline {
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2.2em;
   opacity: 0.85;
 }
