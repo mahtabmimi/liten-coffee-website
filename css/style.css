@@ -133,7 +133,7 @@ nav.main-nav {
 nav.main-nav a {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 200;
   letter-spacing: -0.2px;
   line-height: 2em;
   text-decoration: none;
@@ -165,7 +165,7 @@ nav.main-nav a:hover::after {
 }
 
 nav.main-nav a.active {
-  font-weight: 700;
+  font-weight: 400;
   color: var(--navy);
 }
 nav.main-nav a.active::after {
