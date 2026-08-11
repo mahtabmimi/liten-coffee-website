@@ -98,7 +98,7 @@ a { color: inherit; }
 }
 
 header.site-header {
-  border-bottom: 1px solid rgba(2, 55, 105, 0.08);
+  border-bottom: none;
 }
 
 .header-inner {
