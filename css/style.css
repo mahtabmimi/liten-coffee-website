@@ -306,15 +306,15 @@ footer.site-footer {
   gap: 56px;
 }
 
-.footer-brand-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 31px;
-  letter-spacing: 0em;
+.footer-col p.footer-brand-title {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.04em;
   line-height: 1.6em;
-  margin: 0 0 40px;
+  margin: 0 0 24px;
+  text-transform: uppercase;
 }
-
 .footer-col h4 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
