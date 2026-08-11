@@ -204,9 +204,9 @@ nav.main-nav a.active::after {
   color: var(--navy);
   font-family: 'Inter', sans-serif;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 0.01em;
-  padding: 10px 26px;
+  padding: 14px 34px;
   border-radius: 999px;
   text-decoration: none;
   transition: background 0.2s ease;
