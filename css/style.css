@@ -56,7 +56,7 @@ a { color: inherit; }
   font-family: 'Instrument Serif', serif;
   font-weight: 400;
   font-size: 20px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   line-height: 1.8em;
 }
 
@@ -71,7 +71,7 @@ a { color: inherit; }
 .hero-line {
   font-family: 'Instrument Serif', serif;
   font-size: 22px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.055em;
   line-height: 1.6em;
   text-align: center;
   max-width: 100%;
@@ -241,18 +241,18 @@ nav.main-nav a.active::after {
 }
 
 section.page-section {
-  padding: 72px 0;
+  padding: 96px 0;
 }
 
 .img-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 48px;
 }
 
 .img-grid-2 img {
   width: 100%;
-  height: 260px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 4px;
   display: block;
