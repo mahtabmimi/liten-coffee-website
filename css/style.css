@@ -252,11 +252,12 @@ section.page-section {
 }
 
 .img-grid-2 img {
-  width: 100%;
+  width: 90%;
   aspect-ratio: 471 / 411;
   object-fit: cover;
   border-radius: 14px;
   display: block;
+  margin: 0 auto;
 }
 
 .img-placeholder {
