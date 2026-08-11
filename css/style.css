@@ -295,7 +295,7 @@ section.page-section {
 }
 
 footer.site-footer {
-  border-top: 1px solid rgba(2, 55, 105, 0.08);
+  border-top: 1px solid var(--pill-blue);
   padding: 56px 0 48px;
   margin-top: 30px;
 }
