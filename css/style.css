@@ -200,11 +200,11 @@ nav.main-nav a.active::after {
 .pill {
   display: inline-block;
   background: transparent;
-  border: 1px solid var(--pill-blue);
+  border: 2px solid var(--pill-blue);
   color: var(--navy);
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 350;
+  font-size: 18px;
   letter-spacing: 0.01em;
   padding: 10px 26px;
   border-radius: 999px;
@@ -302,13 +302,13 @@ footer.site-footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2.6fr 1fr 1fr 1fr;
   gap: 56px;
 }
 
 .footer-col p.footer-brand-title {
   font-family: 'Inter', Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 350;
   font-size: 30px;
   letter-spacing: 0.04em;
   line-height: 1.6em;
@@ -327,9 +327,10 @@ footer.site-footer {
 .hours-row {
   display: grid;
   grid-template-columns: 68px 14px 1fr;
+  column-gap: 10px;
   font-family: 'Instrument Serif', serif;
   font-size: 18px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   line-height: 1.4em;
   color: var(--navy);
 }
