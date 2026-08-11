@@ -203,7 +203,7 @@ nav.main-nav a.active::after {
   border: 2px solid var(--pill-blue);
   color: var(--navy);
   font-family: 'Inter', sans-serif;
-  font-weight: 350;
+  font-weight: 250;
   font-size: 18px;
   letter-spacing: 0.01em;
   padding: 10px 26px;
@@ -308,7 +308,7 @@ footer.site-footer {
 
 .footer-col p.footer-brand-title {
   font-family: 'Inter', Helvetica, Arial, sans-serif;
-  font-weight: 350;
+  font-weight: 250;
   font-size: 30px;
   letter-spacing: 0.04em;
   line-height: 1.6em;
@@ -327,7 +327,6 @@ footer.site-footer {
 .hours-row {
   display: grid;
   grid-template-columns: 68px 14px 1fr;
-  column-gap: 10px;
   font-family: 'Instrument Serif', serif;
   font-size: 18px;
   letter-spacing: 0.05em;
