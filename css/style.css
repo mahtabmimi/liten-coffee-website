@@ -255,7 +255,7 @@ section.page-section {
   width: 90%;
   aspect-ratio: 471 / 411;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 11px;
   display: block;
   margin: 0 auto;
 }
