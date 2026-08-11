@@ -78,10 +78,17 @@ a { color: inherit; }
   margin: 0 auto;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1300px) {
   .hero-line {
     white-space: nowrap;
-    font-size: clamp(16px, 1.6vw, 24px);
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1299px) {
+  .hero-line {
+    white-space: nowrap;
+    font-size: clamp(16px, 1.9vw, 23px);
   }
 }
 .page-wrap {
@@ -106,7 +113,7 @@ header.site-header {
 }
 
 .logo-link img {
-  height: 84px;
+  height: 120px;
   width: auto;
   display: block;
 }
