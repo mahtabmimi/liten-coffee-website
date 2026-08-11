@@ -248,7 +248,7 @@ section.page-section {
 .img-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 66px;
 }
 
 .img-grid-2 img {
