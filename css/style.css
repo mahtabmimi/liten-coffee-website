@@ -303,7 +303,7 @@ footer.site-footer {
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr minmax(190px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
-  gap: 56px;
+  gap: 69px;
 }
 
 .footer-col p.footer-brand-title {
