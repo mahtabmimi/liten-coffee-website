@@ -4,75 +4,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Liten — Home</title>
-<meta name="description" content="Liten Coffee — a small neighbourhood cafe in South Hampstead serving quality coffee, tea and food.">
-<link rel="icon" href="assets/images/liten-logo.png">
-<script>document.write('<link rel="stylesheet" href="css/style.css?v=' + Date.now() + '">');</script>
+<meta name="description" content="Liten Coffee, a small neighbourhood cafe in South Hampstead serving quality coffee, tea and food.">
+<link rel="icon" href="assets/images/liten-wordmark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="preload" href="assets/fonts/InterDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo-link" aria-label="Liten — back to home">
-      <img src="assets/images/liten-logo.png" alt="Liten logo">
+  <div class="frame header-inner">
+    <a href="index.html" class="logo-link" aria-label="Liten, back to home">
+      <img src="assets/images/liten-wordmark.png" alt="Liten" width="245" height="91">
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-    <nav class="main-nav">
-      <a href="whatson.html" class="">What's On</a>
-<a href="menus.html" class="">Menus</a>
-<a href="aboutus.html" class="">About Us</a>
-<a href="faqs.html" class="">FAQs</a>
-
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <a href="whatson.html">What's On<svg class="squiggle" viewBox="0 0 76 7" aria-hidden="true" focusable="false"><path d="M 0 5.26 C 0 5.26 3.353 2.695 7.664 2.41 C 11.975 2.125 14.529 6.456 19.16 5.886 C 23.79 5.316 25.866 0.416 30.017 0.7 C 34.168 0.985 33.849 6.399 38.958 6.969 C 44.067 7.539 47.261 0 52.37 0 C 57.479 0 58.597 5.841 63.866 5.699 C 69.134 5.556 76 1.14 76 1.14"/></svg></a>
+      <a href="menus.html">Menus</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="faqs.html">FAQs</a>
     </nav>
   </div>
 </header>
 
-<div class="page-wrap">
-  <section class="page-section" style="padding-bottom:0; padding-top:32px;">
-    <p class="hero-line">Borne out of a love for coffee and community, Liten is the neighbourhood stop for quality drinks and conversation.</p>
-  </section>
+<h1 class="sr-only">Liten Coffee</h1>
+<main class="frame">
+  <p class="home-hero">Borne out of a love for coffee and community, Liten is the neighbourhood stop for quality drinks and conversation.</p>
 
-  <section class="page-section" style="padding-top:40px;">
-    <div class="img-grid-2">
-      <img src="assets/images/Liten_Shop_image.png" alt="Liten cafe shopfront in South Hampstead with customers sitting outside">
-      <img src="assets/images/Coffee_pour_image.png" alt="Coffee being poured at the Liten counter">
+  <div class="home-main">
+    <div class="photo-row">
+      <img class="photo" src="assets/images/Liten_Shop_image.png" alt="The Liten shopfront in South Hampstead with customers sitting outside" width="470" height="411">
+      <img class="photo" src="assets/images/Coffee_pour_image.png" alt="Filter coffee being poured beside a bag of beans" width="470" height="411">
     </div>
-    <div style="margin-top:40px; display:flex; gap:32px; align-items:flex-end; flex-wrap:wrap;">
-      <p class="font-body" style="flex:1; min-width:280px; margin:0;">Opened in 2022, we're a small cafe just by South Hampstead station serving Origin Coffee Roasters and a regular rotation of new, specially selected guest beans. We also prepare specialty teas, matcha and hot drinks with a daily stock of pastries, snacks and treats on our counter top from local bakeries. Selection of dairy, soy and oat milks served.</p>
-      <a href="menus.html" class="pill">menus</a>
-    </div>
-    <p class="font-body" style="margin-top:16px;">To find out more about our food + drinks, take a look at our menus page :)</p>
-  </section>
 
-  <section class="page-section" style="padding-top:8px;">
-    <div class="img-grid-2">
-      <img src="assets/images/Coffee_Cups_image.png" alt="Stack of Liten branded coffee cups">
-      <img src="assets/images/Matcha_Image.png" alt="Matcha being prepared with a bamboo whisk">
+    <div class="home-copy-1">
+      <div class="copy body-21">
+        <p>Opened in 2022, we’re a small cafe just by South Hampstead station serving Origin Coffee Roasters and a regular rotation of new, specially selected guest beans. We also prepare specialty teas, matcha and hot drinks with a daily stock of pastries, snacks and treats on our counter top from local bakeries. Selection of dairy, soy and oat milks served.</p>
+        <p>To find out more about our food + drinks, take a look at our menus page :)</p>
+      </div>
+      <a class="pill" href="menus.html">menus</a>
     </div>
-    <div style="margin-top:84px; display:flex; gap:84px; align-items:flex-start; flex-wrap:wrap;">
-      <a href="aboutus.html" class="pill">about us</a>
-      <p class="font-body" style="flex:1; min-width:280px; margin:0;text-align:right;">Small but mighty, we have indoor and outside seating space, our bench and high-counter stools. We also have a sister cafe — Dawn Seal, nearby in Maida Vale where we host Sunday Chess Club and other events.</p>
+
+    <div class="photo-row second">
+      <img class="photo" src="assets/images/Coffee_Cups_image.png" alt="A stack of Liten branded coffee cups" width="470" height="411">
+      <img class="photo" src="assets/images/Matcha_Image.png" alt="Matcha being whisked" width="471" height="411">
     </div>
-  </section>
-</div>
+
+    <div class="home-copy-2">
+      <a class="pill short" href="aboutus.html">about us</a>
+      <div class="copy body-21">
+        <p>Small but mighty, we have indoor and outside seating space our bench and high-counter stools. We also have a sister cafe - Dawn Seal, nearby in Maida Vale where we host Sunday Chess Club and other events.</p>
+        <p>Details about our cafe space can be found in 'about us'</p>
+      </div>
+    </div>
+  </div>
+</main>
 <footer class="site-footer">
-  <div class="page-wrap footer-grid">
+  <div class="frame footer-grid">
     <div class="footer-col">
-      <p class="footer-brand-title">LITEN COFFEE</p>
-      <p class="footer-tagline">'li'tn.' – meaning small in Swedish.</p>
+      <p class="footer-brand">LITEN COFFEE</p>
+      <p class="footer-gloss">ˈli'tn.- meaning small in Swedish.</p>
     </div>
     <div class="footer-col">
-      <h4>opening hours</h4>
-      <div class="hours-row"><span>Mon – Fri</span><span class="hours-pipe">|</span><span>7:30am – 3pm</span></div>
-      <div class="hours-row"><span>Sat</span><span class="hours-pipe">|</span><span>8:30am – 4pm</span></div>
-      <div class="hours-row"><span>Sun</span><span class="hours-pipe">|</span><span>9:30am – 4pm</span></div>
+      <h2 class="heading-sans">opening hours</h2>
+      <div class="hours">
+        <p class="hours-row"><span>Mon - Fri</span><b>|</b><span>7:30am  - 3pm</span></p>
+        <p class="hours-row"><span>Sat</span><b>|</b><span>8:30am - 4pm</span></p>
+        <p class="hours-row"><span>Sun</span><b>|</b><span>9:30am - 4pm</span></p>
+      </div>
     </div>
     <div class="footer-col">
-      <h4>contact</h4>
+      <h2 class="heading-sans">contact</h2>
       <p><a href="https://www.instagram.com/liten_coffeeshop/" target="_blank" rel="noopener">Instagram</a></p>
-      <p><span class="draft-inline">DRAFT</span> Phone Number</p>
-      <p><span class="draft-inline">DRAFT</span> Email</p>
+      <p>Phone Number</p>
+      <p>Email</p>
     </div>
     <div class="footer-col">
-      <h4>find us</h4>
+      <h2 class="heading-sans">find us</h2>
       <p>1b Fairhazel Gardens</p>
       <p>NW6 3QE</p>
       <p>South Hampstead</p>

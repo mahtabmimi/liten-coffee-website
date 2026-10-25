@@ -4,63 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Liten — What's On</title>
-<meta name="description" content="Liten Coffee — a small neighbourhood cafe in South Hampstead serving quality coffee, tea and food.">
-<link rel="icon" href="assets/images/liten-logo.png">
-<script>document.write('<link rel="stylesheet" href="css/style.css?v=' + Date.now() + '">');</script>
+<meta name="description" content="Events at Liten Coffee and our sister cafe Dawn Seal, including Sunday Chess Club.">
+<link rel="icon" href="assets/images/liten-wordmark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="preload" href="assets/fonts/InterDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo-link" aria-label="Liten — back to home">
-      <img src="assets/images/liten-logo.png" alt="Liten logo">
+<header class="site-header compact">
+  <div class="frame header-inner">
+    <a href="index.html" class="logo-link" aria-label="Liten, back to home">
+      <img src="assets/images/liten-wordmark.png" alt="Liten" width="245" height="91">
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-    <nav class="main-nav">
-      <a href="whatson.html" class="active">What's On</a>
-<a href="menus.html" class="">Menus</a>
-<a href="aboutus.html" class="">About Us</a>
-<a href="faqs.html" class="">FAQs</a>
-
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <a href="whatson.html" aria-current="page">What's On<svg class="squiggle" viewBox="0 0 76 7" aria-hidden="true" focusable="false"><path d="M 0 5.26 C 0 5.26 3.353 2.695 7.664 2.41 C 11.975 2.125 14.529 6.456 19.16 5.886 C 23.79 5.316 25.866 0.416 30.017 0.7 C 34.168 0.985 33.849 6.399 38.958 6.969 C 44.067 7.539 47.261 0 52.37 0 C 57.479 0 58.597 5.841 63.866 5.699 C 69.134 5.556 76 1.14 76 1.14"/></svg></a>
+      <a href="menus.html">Menus</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="faqs.html">FAQs</a>
     </nav>
   </div>
 </header>
-<h1 class="sr-only">What's On</h1>
-<div class="page-wrap">
-  <section class="page-section">
-    <p class="font-body">Small cafe, big community. Here's what's happening at Liten and our sister cafe, Dawn Seal.</p>
 
-    <div style="margin-top:32px;">
-      <div class="draft" style="margin-bottom:28px;">
-        <p class="font-subheading" style="margin-bottom:4px;">Sunday Chess Club</p>
-        <p class="font-body" style="margin-top:0;">We run a social chess club on a Sunday each month at Dawn Seal — all levels welcome. Please confirm the exact date/frequency and whether sign-up is required.</p>
-      </div>
-      <div class="draft">
-        <p class="font-subheading" style="margin-bottom:4px;">[Second regular event — optional]</p>
-        <p class="font-body" style="margin-top:0;">If you run any other regular events (quiz night, tastings, local makers, etc.) let us know and we'll add them here — otherwise this section can be removed.</p>
-      </div>
-    </div>
-  </section>
-</div>
+<h1 class="sr-only">What's On</h1>
+<main class="frame">
+  <p class="whatson-line">We run a social chess club on a Sunday each month, check out our schedule here _____</p>
+</main>
 <footer class="site-footer">
-  <div class="page-wrap footer-grid">
+  <div class="frame footer-grid">
     <div class="footer-col">
-      <p class="footer-brand-title">LITEN COFFEE</p>
-      <p class="footer-tagline">'li'tn.' – meaning small in Swedish.</p>
+      <p class="footer-brand">LITEN COFFEE</p>
+      <p class="footer-gloss">ˈli'tn.- meaning small in Swedish.</p>
     </div>
     <div class="footer-col">
-      <h4>opening hours</h4>
-      <div class="hours-row"><span>Mon – Fri</span><span class="hours-pipe">|</span><span>7:30am – 3pm</span></div>
-      <div class="hours-row"><span>Sat</span><span class="hours-pipe">|</span><span>8:30am – 4pm</span></div>
-      <div class="hours-row"><span>Sun</span><span class="hours-pipe">|</span><span>9:30am – 4pm</span></div>
+      <h2 class="heading-sans">opening hours</h2>
+      <div class="hours">
+        <p class="hours-row"><span>Mon - Fri</span><b>|</b><span>7:30am  - 3pm</span></p>
+        <p class="hours-row"><span>Sat</span><b>|</b><span>8:30am - 4pm</span></p>
+        <p class="hours-row"><span>Sun</span><b>|</b><span>9:30am - 4pm</span></p>
+      </div>
     </div>
     <div class="footer-col">
-      <h4>contact</h4>
+      <h2 class="heading-sans">contact</h2>
       <p><a href="https://www.instagram.com/liten_coffeeshop/" target="_blank" rel="noopener">Instagram</a></p>
-      <p><span class="draft-inline">DRAFT</span> Phone Number</p>
-      <p><span class="draft-inline">DRAFT</span> Email</p>
+      <p>Phone Number</p>
+      <p>Email</p>
     </div>
     <div class="footer-col">
-      <h4>find us</h4>
+      <h2 class="heading-sans">find us</h2>
       <p>1b Fairhazel Gardens</p>
       <p>NW6 3QE</p>
       <p>South Hampstead</p>
