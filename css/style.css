@@ -379,3 +379,7 @@ img { display: block; max-width: 100%; }
 @media (max-width: 420px) {
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* "find us" address link: looks like the design, underlines on hover */
+.map-link { display: block; text-decoration: none; }
+.map-link:hover p, .map-link:focus-visible p { text-decoration: underline; }

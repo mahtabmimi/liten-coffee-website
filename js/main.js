@@ -9,3 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.textContent = open ? 'Close' : 'Menu';
   });
 });
+
+// "find us" address: Apple Maps on iPhone, iPad and Mac; Google Maps everywhere else
+document.addEventListener('DOMContentLoaded', () => {
+  const isApple = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+  if (!isApple) return;
+  document.querySelectorAll('.map-link[data-apple-maps]').forEach((link) => {
+    link.href = link.dataset.appleMaps;
+  });
+});
