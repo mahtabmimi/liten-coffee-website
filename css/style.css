@@ -100,16 +100,25 @@ img { display: block; max-width: 100%; }
 .main-nav a:first-child { letter-spacing: -0.17px; }
 .main-nav a:hover { color: var(--navy); }
 
-/* Hand-drawn squiggle: exact vector from Framer, sits under "What's On" */
+/* Hand-drawn squiggle: exact vector from Framer.
+   Hidden by default; shows under the current page's link,
+   and on hover on devices with a mouse. */
 .squiggle {
   position: absolute;
-  left: -21px;
+  left: calc(50% - 38px);
   top: 23px;
   width: 76px;
   height: 7px;
   overflow: visible;
   pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
+.main-nav a[aria-current="page"] .squiggle { opacity: 1; }
+@media (hover: hover) {
+  .main-nav a:hover .squiggle { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .squiggle { transition: none; } }
 .squiggle path { fill: none; stroke: var(--navy); stroke-width: 1; }
 
 .nav-toggle { display: none; }
