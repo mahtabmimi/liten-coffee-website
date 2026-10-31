@@ -329,16 +329,31 @@ img { display: block; max-width: 100%; }
     padding: 0 20px;
   }
   .logo-link img, .site-header.compact .logo-link img { width: 168px; height: 63px; }
+  /* Three-line navigation button; turns into a cross while open */
   .nav-toggle {
     display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    padding: 0 10px;
+    margin-right: -10px;
     background: none;
     border: 0;
-    padding: 8px 0;
-    font-family: var(--sans);
-    font-size: 17px;
-    color: var(--navy);
     cursor: pointer;
   }
+  .nav-toggle span {
+    display: block;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--navy);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  .nav-toggle:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
   .main-nav,
   .site-header.compact .main-nav {
     display: none;
@@ -383,3 +398,5 @@ img { display: block; max-width: 100%; }
 /* "find us" address link: looks like the design, underlines on hover */
 .map-link { display: block; text-decoration: none; }
 .map-link:hover p, .map-link:focus-visible p { text-decoration: underline; }
+
+@media (prefers-reduced-motion: reduce) { .nav-toggle span { transition: none; } }
