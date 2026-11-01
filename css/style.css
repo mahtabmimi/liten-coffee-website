@@ -371,7 +371,8 @@ img { display: block; max-width: 100%; }
     gap: 18px;
     padding: 12px 0 22px;
   }
-  .main-nav.open { display: flex; }
+  .main-nav.open,
+  .site-header.compact .main-nav.open { display: flex; }
   .main-nav a { font-size: 19px; line-height: 24px; }
   .squiggle { left: 0; top: 27px; }
 
@@ -396,13 +397,15 @@ img { display: block; max-width: 100%; }
   .things { margin-top: 32px; }
   .whatson-line { padding: 32px 20px 160px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px 24px; padding: 40px 20px 56px; }
-  .footer-col:first-child { grid-column: 1 / -1; }
+  .footer-col:first-child,
+  .footer-col:nth-child(2) { grid-column: 1 / -1; }   /* brand, then opening hours on their own rows */
+  .footer-col:nth-child(4) { grid-column: 1; grid-row: 3; } /* find us, bottom left */
+  .footer-col:nth-child(3) { grid-column: 2; grid-row: 3; } /* contact, bottom right */
+  .footer-col p { white-space: nowrap; }
   .footer-col .footer-gloss { margin-top: 4px; line-height: 30px; max-width: none; }
   .footer-col .heading-sans { margin-bottom: 12px; }
 }
-@media (max-width: 420px) {
-  .footer-grid { grid-template-columns: 1fr; }
-}
+
 
 /* "find us" address link: looks like the design, underlines on hover */
 .map-link { display: block; text-decoration: none; }
