@@ -10,11 +10,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// "find us" address: Apple Maps on iPhone, iPad and Mac; Google Maps everywhere else
+// "find us" address: tap to choose Apple Maps or Google Maps
 document.addEventListener('DOMContentLoaded', () => {
-  const isApple = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
-  if (!isApple) return;
-  document.querySelectorAll('.map-link[data-apple-maps]').forEach((link) => {
-    link.href = link.dataset.appleMaps;
+  document.querySelectorAll('.map-choice').forEach((box) => {
+    const toggle = box.querySelector('.map-toggle');
+    const options = box.querySelector('.map-options');
+    if (!toggle || !options) return;
+    box.classList.add('js');
+    options.hidden = true;
+    const setOpen = (open) => {
+      options.hidden = !open;
+      toggle.setAttribute('aria-expanded', String(open));
+    };
+    toggle.addEventListener('click', () => {
+      setOpen(options.hidden);
+      if (!options.hidden) options.querySelector('a').focus();
+    });
+    options.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+    document.addEventListener('click', (e) => { if (!box.contains(e.target)) setOpen(false); });
+    box.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !options.hidden) { setOpen(false); toggle.focus(); }
+    });
   });
 });

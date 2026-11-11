@@ -105,11 +105,11 @@ img { display: block; max-width: 100%; }
    and on hover on devices with a mouse. */
 .squiggle {
   position: absolute;
-  left: calc(50% - 38px);
-  top: 23px;
-  width: 76px;
-  height: 7px;
-  overflow: visible;
+  left: 0;
+  top: 22px;
+  width: 100%;   /* same width as the word; the wave is cropped, never squashed */
+  height: 9px;
+  overflow: hidden;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -127,7 +127,7 @@ img { display: block; max-width: 100%; }
 .site-header.compact .header-inner { height: auto; border-bottom: 0; }
 .site-header.compact .logo-link img { width: 168px; height: 63px; }
 .site-header.compact .main-nav { padding-top: 21px; }
-.site-header.compact .squiggle { top: 24px; }
+.site-header.compact .squiggle { top: 23px; }
 .site-header.compact { border-bottom: 1px solid var(--rule); } /* full-width divider */
 
 /* Type styles ----------------------------------------------------------- */
@@ -292,11 +292,11 @@ img { display: block; max-width: 100%; }
   white-space: nowrap;
 }
 .footer-col .footer-gloss {
-  margin-top: 13px;
+  margin-top: 21px;
   max-width: 246px;
   font-style: italic;
   font-size: 20px;
-  line-height: 44px;
+  line-height: 28px; /* same line spacing as the other footer columns */
 }
 .footer-col p, .hours-row {
   font-size: 20px;
@@ -374,7 +374,7 @@ img { display: block; max-width: 100%; }
   .main-nav.open,
   .site-header.compact .main-nav.open { display: flex; }
   .main-nav a { font-size: 19px; line-height: 24px; }
-  .squiggle { left: 0; top: 27px; }
+  .squiggle { top: 26px; }
 
   .home-hero { padding: 40px 20px 0; font-size: 22px; line-height: 28px; letter-spacing: 0.6px; }
   .home-main, .menus-main, .inner-main { padding-left: 20px; padding-right: 20px; }
@@ -402,13 +402,56 @@ img { display: block; max-width: 100%; }
   .footer-col:nth-child(4) { grid-column: 1; grid-row: 3; } /* find us, bottom left */
   .footer-col:nth-child(3) { grid-column: 2; grid-row: 3; } /* contact, bottom right */
   .footer-col p { white-space: nowrap; }
-  .footer-col .footer-gloss { margin-top: 4px; line-height: 30px; max-width: none; }
+  .footer-col .footer-gloss { margin-top: 4px; max-width: none; }
   .footer-col .heading-sans { margin-bottom: 12px; }
 }
 
 
-/* "find us" address link: looks like the design, underlines on hover */
-.map-link { display: block; text-decoration: none; }
-.map-link:hover p, .map-link:focus-visible p { text-decoration: underline; }
+/* "find us" address: tap to choose Apple Maps or Google Maps */
+.map-choice { position: relative; }
+.map-toggle {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.6px;
+}
+.map-toggle span:not(.sr-only) { display: block; white-space: nowrap; }
+.map-toggle:hover span, .map-toggle[aria-expanded="true"] span { text-decoration: underline; }
+.map-toggle:focus-visible { outline: 2px solid var(--navy); outline-offset: 4px; border-radius: 2px; }
+.map-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  margin-top: 10px;
+}
+.map-choice.js .map-options {
+  margin: 12px 0 0 -14px;      /* opens below the address */
+  width: max-content;
+  max-width: calc(100% + 14px);
+  padding: 6px 14px;
+  background: var(--bg);
+  border: 3px solid var(--pill-blue);
+  border-radius: 18px;
+}
+.map-choice.js .map-options[hidden] { display: none; }
+.map-options a {
+  display: block;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 34px;
+  color: var(--pill-text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.map-options a:hover, .map-options a:focus-visible { text-decoration: underline; }
 
 @media (prefers-reduced-motion: reduce) { .nav-toggle span { transition: none; } }
