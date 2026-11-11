@@ -578,3 +578,10 @@ img { display: block; max-width: 100%; }
   .footer-grid { grid-template-columns: minmax(0, 1fr); }
   .footer-col:nth-child(3), .footer-col:nth-child(4) { grid-column: 1; grid-row: auto; }
 }
+
+/* Dawn Seal link: white pill with their logo */
+.pill.dawn { background: #fff; border-color: var(--dawn-pill, #DE5A42); }
+.pill.dawn img { width: 116px; height: auto; }
+.pill.dawn:hover, .pill.dawn:focus-visible { background: var(--dawn-pill-hover, #FBEAE6); }
+.dawn-row { display: grid; gap: 20px; justify-items: start; }
+.event-text .pill.dawn { margin-top: 8px; }
