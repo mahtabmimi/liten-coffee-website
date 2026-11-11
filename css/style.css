@@ -657,13 +657,11 @@ img { display: block; max-width: 100%; }
   line-height: 26px;
   letter-spacing: 0.1px;
 }
-/* Homepage pills in serif, larger and heavier for an editorial feel.
-   Instrument Serif has no bold weight, so a hairline stroke thickens it cleanly. */
+/* Homepage pills in serif, slightly larger for an editorial feel */
 .home-main .pill {
   font-family: var(--serif);
   font-size: 28px;
   letter-spacing: 0.2px;
-  -webkit-text-stroke: 0.25px currentColor;
 }
 @media (max-width: 760px) {
   .home-main .body-21,
