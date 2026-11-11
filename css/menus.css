@@ -1,0 +1,96 @@
+/* Menus page: a printed-menu layout in the site's fonts and colours.
+   Item names sit on a baby blue "shelf" line, like a letter-board menu. */
+
+.menu-x .events-heading.past { margin-top: 72px; padding-top: 0; border-top: 0; } /* no grey line above FOOD */
+
+.drinks-menu {
+  margin-top: 24px;
+  max-width: 1044px;
+  border-top: 1px solid var(--rule);
+}
+.menu-body { padding: 4px 0 24px; }
+.drinks-menu > .menu-note { margin-top: 28px; }
+
+.menu-list {               /* two columns that read top to bottom, even spacing */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 64px;
+}
+.mi { break-inside: avoid; padding-bottom: 20px; width: 100%; }
+.menu-lead {
+  margin: -2px 0 18px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--navy);
+}
+
+.mi-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid var(--pill-blue);   /* the shelf */
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.mi-price { flex: none; font-variant-numeric: tabular-nums; letter-spacing: 1px; }
+
+.mi-desc {
+  margin-top: 8px;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  color: var(--navy);
+}
+
+.menu-note {
+  margin-top: 24px;
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+/* Signatures: dotted box, as on the printed menu */
+.menu-cat.signatures .menu-list {
+  padding: 28px 32px 32px;
+  border: 2px dotted var(--pill-text);
+  border-radius: 14px;
+}
+
+/* Food */
+.menu-x .food-row { margin-top: 32px; }
+.menu-x .food-row .event-text { gap: 24px; justify-items: start; }
+
+@media (max-width: 760px) {
+  .menu-list { columns: 1; }
+  .menu-cat.signatures .menu-list { padding: 22px 18px 24px; }
+  .menu-x .events-heading.past { margin-top: 56px; }
+}
+
+/* Add-ons under a dish, e.g. "+ Feta 2.00" */
+.mi-extra {
+  margin-top: 2px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 22px;
+  color: var(--pill-text);
+}
+.menu-x .food-row { margin-top: 56px; }
+.menu-intro { display: grid; gap: 4px; max-width: 720px; line-height: 30px; }

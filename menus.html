@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
 <link rel="preload" href="assets/fonts/InterDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css?v=2">
+<link rel="stylesheet" href="css/menus.css">
 </head>
 <body>
 <header class="site-header compact">
@@ -28,26 +29,234 @@
   </div>
 </header>
 
-<main class="frame menus-main">
+<main class="frame menus-main menu-x">
   <h1 class="page-title">Menus</h1>
-  <p class="intro body-20">Copy about menu</p>
-
-  <div class="photo-row">
-    <div class="menu-col">
-      <!-- WATERMARK: remove the watermark wrapper once final photos are in -->
-      <div class="watermark" data-watermark="PLACEHOLDER">
-        <img class="photo" src="assets/images/Coffee_pour_image.png" alt="Filter coffee being poured beside a bag of beans" width="470" height="411">
-      </div>
-      <a class="pill" href="assets/pdfs/liten-drinks-menu.pdf" target="_blank" rel="noopener">drinks</a>
-    </div>
-    <div class="menu-col">
-      <!-- WATERMARK: remove the watermark wrapper once final photos are in -->
-      <div class="watermark" data-watermark="PLACEHOLDER">
-        <img class="photo" src="assets/images/Pastries_image.jpg" alt="Croissants, pain suisse, cinnamon swirls and bliss balls on the Liten counter" width="470" height="411">
-      </div>
-      <a class="pill r34" href="assets/pdfs/liten-food-menu.pdf" target="_blank" rel="noopener">food</a>
-    </div>
+  <div class="intro menu-intro body-20">
+    <p>Our house coffee is by Origin Coffee Roasters, Brasil natural processed.</p>
+    <p>We use The Estate Dairy full fat &amp; semi-skimmed milk and Oatly oat milk. No charge for alternative milks.</p>
   </div>
+
+  <h2 class="events-heading">Drinks</h2>
+  <div class="drinks-menu">
+    <details class="past-event menu-cat" name="drinks" open>
+      <summary><span>Coffee</span></summary>
+      <div class="menu-body">
+      <p class="menu-lead">All drinks are double shots.</p>
+      <ul class="menu-list">
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Espresso</span><span class="mi-price">3.50</span></div>
+          <p class="mi-desc">Origin Beija Flor house blend.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Long Black</span><span class="mi-price">3.70</span></div>
+          <p class="mi-desc">8oz, hot water, milk optional.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">House Filter / Guest</span><span class="mi-price">3.70</span></div>
+          <p class="mi-desc">Filter brewed on Moccamaster with occasional guest coffee roaster!</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Flat White</span><span class="mi-price">3.90</span></div>
+          <p class="mi-desc">6oz, steamed milk of choice.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Latte</span><span class="mi-price">3.90</span></div>
+          <p class="mi-desc">8oz, steamed milk of choice.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Cappuccino</span><span class="mi-price">3.90</span></div>
+          <p class="mi-desc">8oz, chocolate (v) optional, steamed milk of choice.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Iced Latte</span><span class="mi-price">4.80</span></div>
+          <p class="mi-desc">12oz, filtered ice, milk of choice.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Iced Black</span><span class="mi-price">4.30</span></div>
+          <p class="mi-desc">12oz, filtered water &amp; ice, milk optional.</p>
+        </li>
+      </ul>
+      </div>
+    </details>
+    <details class="past-event menu-cat" name="drinks">
+      <summary><span>Tea</span></summary>
+      <div class="menu-body">
+      <ul class="menu-list">
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Ceremonial Matcha Latte</span><span class="mi-price">4.60</span></div>
+          <p class="mi-desc">Ceremonial is the highest grade of matcha from Uji, Japan. Pairs well with steamed milk of your choice. Rich in antioxidants.</p>
+          <p class="mi-extra">+ Make it iced .70</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Matcha Tea</span><span class="mi-price">4.50</span></div>
+          <p class="mi-desc">Water is gradually added to 2g ceremonial matcha powder whilst whisking constantly.</p>
+          <p class="mi-extra">+ Make it iced .70</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Irish Breakfast</span><span class="mi-price">3.70</span></div>
+          <p class="mi-desc">Sourced from tea gardens of Rwanda, Kenya &amp; the Assam Valley of India. Ireland&#x27;s favourite tea. Milk optional. Barry&#x27;s.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Spiced Chai Latte</span><span class="mi-price">4.50</span></div>
+          <p class="mi-desc">Ground black tea with cardamom, cinnamon, ginger, white pepper &amp; cloves. Warm spice, with bright notes and a comforting spiced finish, paired with steamed milk. Pamban Chai.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Herbal Infusions</span><span class="mi-price">3.70</span></div>
+          <p class="mi-desc">Ask the team what&#x27;s on offer today.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Earl Grey</span><span class="mi-price">3.70</span></div>
+          <p class="mi-desc">Single origin Ceylon black tea base from Sri Lanka, natural Italian bergamot oil. Milk optional. Good &amp; Proper Tea.</p>
+        </li>
+      </ul>
+      </div>
+    </details>
+    <details class="past-event menu-cat signatures" name="drinks">
+      <summary><span>Signatures</span></summary>
+      <div class="menu-body">
+      <ul class="menu-list">
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Iced Strawberry Matcha</span><span class="mi-price">6.50</span></div>
+          <p class="mi-desc">Ceremonial grade organic matcha, strawberry cordial, ice &amp; milk of your choice.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Iced Blueberry Matcha</span><span class="mi-price">6.50</span></div>
+          <p class="mi-desc">Ceremonial grade organic matcha, Swedish blueberry cordial, ice &amp; milk of your choice.</p>
+        </li>
+      </ul>
+      </div>
+    </details>
+    <details class="past-event menu-cat" name="drinks">
+      <summary><span>Chocolate</span></summary>
+      <div class="menu-body">
+      <ul class="menu-list">
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Himalayan Salted Hot Chocolate</span><span class="mi-price">4.50</span></div>
+          <p class="mi-desc">68% Himalayan salted hot chocolate, naturally vegan. Pair with milk of your choice. 8oz. Bare Bones.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Iced Choco-Milk</span><span class="mi-price">6.50</span></div>
+          <p class="mi-desc">Chocolate flakes (v) roasted, ground and developed specifically for cold chocolate milk. 12oz. Served over filtered ice. Pair with milk of your choice. Bare Bones.</p>
+        </li>
+      </ul>
+      </div>
+    </details>
+    <details class="past-event menu-cat" name="drinks">
+      <summary><span>Extras</span></summary>
+      <div class="menu-body">
+      <ul class="menu-list">
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Babyccino</span><span class="mi-price">1.20</span></div>
+          <p class="mi-desc">Gently steamed 6oz cup of milk. Warm not hot. Chocolate sprinkles optional.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Extra Shot / Size Up</span><span class="mi-price">.70</span></div>
+        </li>
+      </ul>
+      </div>
+    </details>
+
+  </div>
+
+  <h2 class="events-heading past">Food</h2>
+  <div class="drinks-menu food-menu">
+    <details class="past-event menu-cat" name="food" open>
+      <summary><span>Breakfast</span></summary>
+      <div class="menu-body">
+      <ul class="menu-list">
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Maple Miso Granola</span><span class="mi-price">7.50</span></div>
+          <p class="mi-desc">Maple miso roasted almond granola, cardamom poached pears, estate dairy yoghurt (V)</p>
+          <p class="mi-extra">+ Coconut yoghurt (VE) 1.00</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Buttermilk Pancake Stack</span><span class="mi-price">12.50</span></div>
+          <p class="mi-desc">American buttermilk pancakes, blueberry compote, greek yoghurt, maple syrup &amp; toasted almonds (V)</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Avocado Toast</span><span class="mi-price">10.00</span></div>
+          <p class="mi-desc">Avocado, pickled carrot &amp; red onion, activated seeds, wild garlic &amp; lemon dressing on toast (VE)</p>
+        </li>
+      </ul>
+      </div>
+    </details>
+    <details class="past-event menu-cat" name="food">
+      <summary><span>Eggs</span></summary>
+      <div class="menu-body">
+      <ul class="menu-list">
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Egg &amp; Cheese Brioche</span><span class="mi-price">10.00</span></div>
+          <p class="mi-desc">Fenton Farm folded eggs, smoked cheese, baby gem lettuce, pickle &amp; house fermented sriracha mayo on toasted brioche (V)</p>
+          <p class="mi-extra">+ Turkey Bacon 4.00</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Scrambled Eggs</span><span class="mi-price">10.00</span></div>
+          <p class="mi-desc">Soft scrambled Fenton Farm eggs on toast (V)</p>
+          <p class="mi-extra">+ Feta 2.00</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Kimchi Fried Eggs</span><span class="mi-price">13.50</span></div>
+          <p class="mi-desc">Zambur Ferments vegan kimchi, Fenton Farm fried eggs, dijonaise on toast (V)</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Spice Bag Potato Hash</span><span class="mi-price">13.50</span></div>
+          <p class="mi-desc">Irish spice bag potato hash, wok fried spring greens, onion &amp; red pepper, szechuan chilli crisp, Fenton Farm fried egg (V)</p>
+        </li>
+      </ul>
+      </div>
+    </details>
+    <details class="past-event menu-cat" name="food">
+      <summary><span>Soup, Salad, Sandwiches</span></summary>
+      <div class="menu-body">
+      <ul class="menu-list">
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">West Cork Toastie</span><span class="mi-price">10.00</span></div>
+          <p class="mi-desc">Durrus cheese &amp; mature cheddar, dijonnaise (V)</p>
+          <p class="mi-extra">+ Kimchi 2.50 (V)</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Tuna Melt</span><span class="mi-price">12.50</span></div>
+          <p class="mi-desc">NYT best tuna melt recipe.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Caramelised Tomato Soup</span><span class="mi-price">7.50</span></div>
+          <p class="mi-desc">Slow roasted caramelised vine tomatoes, confit garlic &amp; thyme, buttered sourdough toast. Ode to Campbells! (V)</p>
+          <p class="mi-extra">+ Swap toast for half a classic toastie 4.00</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Tomato Panzanella Salad</span><span class="mi-price">10.50</span></div>
+          <p class="mi-desc">Isle of Wight tomato, crouton, red onion and basil leaf salad and basil oil.</p>
+          <p class="mi-extra">+ Smoked Salmon or Turkey Bacon 4.00</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">TLT Bagel</span><span class="mi-price">10.50</span></div>
+          <p class="mi-desc">Free range turkey bacon, gem lettuce, Galician tomato, wild garlic mayo on toasted bagel.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Smoked Salmon &amp; Cream Cheese Bagel</span><span class="mi-price">10.50</span></div>
+          <p class="mi-desc">Smoked salmon, dill, caper &amp; lemon cream cheese, pickled cucumber &amp; red onion, toasted bagel.</p>
+        </li>
+        <li class="mi">
+          <div class="mi-row"><span class="mi-name">Cream Cheese Bagel</span><span class="mi-price">6.50</span></div>
+          <p class="mi-desc">Toasted sesame bagel with lemon, dill &amp; caper cream cheese spread (V)</p>
+        </li>
+      </ul>
+      </div>
+    </details>
+    <p class="menu-note">Please order at the till. If you have allergies, let us know. Kitchen closes 3pm.</p>
+    <p class="menu-note">During busy periods, no studying or laptops, thank you :)</p>
+  </div>
+
+  <section class="event food-row" aria-label="Pastries and treats">
+    <!-- WATERMARK: remove the watermark wrapper once final photos are in -->
+    <div class="watermark" data-watermark="PLACEHOLDER">
+      <img class="photo" src="assets/images/Pastries_image.jpg" alt="Croissants, pain suisse, cinnamon swirls and bliss balls on the Liten counter" width="470" height="411">
+    </div>
+    <div class="event-text">
+      <h3 class="heading-sans">Pastries, snacks &amp; treats</h3>
+      <p class="body-20">Come on in to see our daily stock of pastries, snacks &amp; treats.</p>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
   <div class="frame footer-grid">
@@ -88,5 +297,46 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+/* Menu sections: one open per group, opening and closing slowly like a door easing shut */
+(function () {
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var DUR = reduce ? 0 : 360, EASE = 'cubic-bezier(.25, .8, .25, 1)';
+  var all = [].slice.call(document.querySelectorAll('details.menu-cat[name]'));
+  all.forEach(function (d) { d.dataset.group = d.getAttribute('name'); d.removeAttribute('name'); });
+  function body(d) { return d.querySelector('.menu-body'); }
+  function run(d, from, to, done) {
+    var b = body(d);
+    if (d._anim) d._anim.cancel();
+    if (!DUR || !b.animate) { done && done(); return; }
+    b.style.overflow = 'hidden';
+    b.style.willChange = 'height';
+    /* animate the padding too, otherwise it pops in or out at the end (the "bump") */
+    var cs = getComputedStyle(b), pt = cs.paddingTop, pb = cs.paddingBottom;
+    var shut = { height: '0px', paddingTop: '0px', paddingBottom: '0px', opacity: 0 };
+    var full = { height: (from || to) + 'px', paddingTop: pt, paddingBottom: pb, opacity: 1 };
+    d._anim = b.animate(from ? [full, shut] : [shut, full], { duration: DUR, easing: EASE });
+    d._anim.onfinish = function () { b.style.overflow = ''; b.style.willChange = ''; d._anim = null; done && done(); };
+  }
+  function close(d) {
+    if (!d.open || d._closing) return;
+    d._closing = true;
+    run(d, body(d).offsetHeight, 0, function () { d.open = false; d._closing = false; });
+  }
+  function open(d) {
+    d._closing = false;
+    d.open = true;
+    run(d, 0, body(d).offsetHeight);
+  }
+  all.forEach(function (d) {
+    d.querySelector('summary').addEventListener('click', function (e) {
+      e.preventDefault();
+      if (d.open && !d._closing) { close(d); return; }
+      all.forEach(function (o) { if (o !== d && o.dataset.group === d.dataset.group) close(o); });
+      open(d);
+    });
+  });
+})();
+</script>
 </body>
 </html>
