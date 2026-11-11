@@ -102,7 +102,14 @@
   column-gap: 48px;
   align-items: start;
 }
-.menus-top .menu-intro { max-width: 560px; }
+.menus-top .menu-intro {   /* sans-serif intro, like the menu descriptions */
+  max-width: 560px;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+}
 .menus-photo {
   margin-top: 71px;
   width: 400px;
@@ -117,5 +124,5 @@
 @media (max-width: 760px) {
   .menus-top { grid-template-columns: minmax(0, 1fr); }
   .menus-photo { margin-top: 24px; width: 100%; height: auto; aspect-ratio: 16 / 10; }
-  .menus-top .menu-intro { line-height: 25px; }
+  .menus-top .menu-intro { font-size: 15px; line-height: 23px; }
 }
