@@ -83,8 +83,8 @@ img { display: block; max-width: 100%; }
   height: 93px; /* 92px bar + 1px divider */
 }
 .logo-link { display: block; flex: none; }
-.logo-link img { width: 196px; height: 73px; object-fit: cover; }
-.site-header:not(.compact) .logo-link { margin-top: 8px; } /* homepage logo 20% smaller, centred on the nav */
+.logo-link img { width: 157px; height: 58px; object-fit: cover; }
+.site-header:not(.compact) .logo-link { margin-top: 14px; } /* homepage logo, centred on the nav */
 
 .main-nav {
   display: flex;
@@ -204,15 +204,15 @@ img { display: block; max-width: 100%; }
 
 /* Home ------------------------------------------------------------------ */
 .home-hero {               /* opening statement: large italic serif, two balanced lines */
-  max-width: 800px;
+  max-width: 720px;
   margin: 0 auto;
   padding-top: 80px;
   padding-left: 16px;
   padding-right: 16px;
   text-align: center;
   font-style: italic;
-  font-size: 36px;      /* 10% smaller than the first large version */
-  line-height: 42px;
+  font-size: 32px;
+  line-height: 39px;
   letter-spacing: 0;
   text-wrap: balance;
 }
@@ -478,7 +478,7 @@ img { display: block; max-width: 100%; }
   .main-nav a { font-size: 19px; line-height: 24px; }
   .squiggle { top: 26px; }
 
-  .home-hero { padding: 40px 20px 0; font-size: 27px; line-height: 33px; }
+  .home-hero { padding: 40px 20px 0; font-size: 24px; line-height: 30px; }
   .home-main, .menus-main, .inner-main { padding-left: 20px; padding-right: 20px; }
   .photo-row, .menus-main .photo-row { grid-template-columns: minmax(0, 1fr); row-gap: 20px; }
   .home-main .photo-row:first-child { margin-top: 36px; }
