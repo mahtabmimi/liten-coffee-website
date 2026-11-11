@@ -351,7 +351,7 @@ img { display: block; max-width: 100%; }
   color: #8A8A8A;
 }
 .event.reverse { grid-template-columns: minmax(0, 1fr) minmax(0, 470px); }
-.event + .event { border-top: 1px solid var(--rule); padding-top: 64px; } /* light line between events */
+.event + .event { border-top: 1px solid var(--pill-blue); padding-top: 64px; } /* baby blue line between upcoming events */
 .event.reverse .photo-placeholder { order: 2; }
 .event-text { display: grid; gap: 16px; max-width: 440px; }
 .event-text .body-20 { line-height: 30px; }
