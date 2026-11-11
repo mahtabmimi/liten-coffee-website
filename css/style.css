@@ -168,6 +168,8 @@ img { display: block; max-width: 100%; }
   line-height: 1;
   color: var(--pill-text);
   text-decoration: none;
+  white-space: nowrap;
+  flex: none;          /* never squeezed by the text beside it */
   transition: background-color 0.2s ease;
 }
 .pill:hover, .pill:focus-visible { background-color: var(--pill-blue); }
@@ -396,14 +398,6 @@ img { display: block; max-width: 100%; }
   .faq-list dd { margin-bottom: 12px; }
   .things { margin-top: 32px; }
   .whatson-line { padding: 32px 20px 160px; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px 24px; padding: 40px 20px 56px; }
-  .footer-col:first-child,
-  .footer-col:nth-child(2) { grid-column: 1 / -1; }   /* brand, then opening hours on their own rows */
-  .footer-col:nth-child(4) { grid-column: 1; grid-row: 3; } /* find us, bottom left */
-  .footer-col:nth-child(3) { grid-column: 2; grid-row: 3; } /* contact, bottom right */
-  .footer-col p { white-space: nowrap; }
-  .footer-col .footer-gloss { margin-top: 4px; max-width: none; }
-  .footer-col .heading-sans { margin-bottom: 12px; }
 }
 
 
@@ -455,3 +449,23 @@ img { display: block; max-width: 100%; }
 .map-options a:hover, .map-options a:focus-visible { text-decoration: underline; }
 
 @media (prefers-reduced-motion: reduce) { .nav-toggle span { transition: none; } }
+
+/* Footer: two columns from small laptops down, so nothing runs off the side */
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px 24px; padding: 40px 48px 56px; }
+  .footer-col:first-child,
+  .footer-col:nth-child(2) { grid-column: 1 / -1; }   /* brand, then opening hours on their own rows */
+  .footer-col:nth-child(4) { grid-column: 1; grid-row: 3; } /* find us, bottom left */
+  .footer-col:nth-child(3) { grid-column: 2; grid-row: 3; } /* contact, bottom right */
+  .footer-col p { white-space: nowrap; }
+  .footer-col .footer-gloss { margin-top: 4px; max-width: none; }
+  .footer-col .heading-sans { margin-bottom: 12px; }
+}
+@media (max-width: 760px) {
+  .footer-grid { padding-left: 20px; padding-right: 20px; }
+}
+/* Smallest phones: one column */
+@media (max-width: 359px) {
+  .footer-grid { grid-template-columns: minmax(0, 1fr); }
+  .footer-col:nth-child(3), .footer-col:nth-child(4) { grid-column: 1; grid-row: auto; }
+}
