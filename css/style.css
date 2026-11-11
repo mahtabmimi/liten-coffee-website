@@ -264,6 +264,7 @@ img { display: block; max-width: 100%; }
   width: 688px; max-width: 100%;
   aspect-ratio: 688 / 311;
   background: var(--placeholder);
+  border-radius: 6px;
 }
 .about-copy { margin-top: 45px; display: grid; gap: 36px; padding-bottom: 120px; }
 .about-copy > p { max-width: 624px; }
@@ -610,6 +611,23 @@ img { display: block; max-width: 100%; }
   letter-spacing: 6px;
   color: rgba(255, 255, 255, 0.6);
   text-shadow: 0 1px 6px rgba(2, 55, 105, 0.35);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Grey photo placeholders get the same diagonal PLACEHOLDER mark */
+.photo-placeholder, .about-photo { position: relative; overflow: hidden; }
+.photo-placeholder::after, .about-photo::after {
+  content: "PLACEHOLDER";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-32deg);
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(22px, 6vw, 46px);
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   pointer-events: none;
 }
