@@ -95,5 +95,11 @@
 .menu-x .food-row { margin-top: 56px; }
 .menu-intro { display: grid; gap: 4px; max-width: 720px; line-height: 30px; }
 
-/* Cup size on the name line, same weight as the name */
-.mi-size { margin-left: 8px; }
+/* Cup size on the name line, styled like the description text (light, lower case) */
+.mi-size {
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  text-transform: none;
+}
