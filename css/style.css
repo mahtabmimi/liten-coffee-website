@@ -676,9 +676,9 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: minmax(0, 55%) minmax(0, 1fr);
   column-gap: 48px;
-  align-items: stretch;
+  align-items: start;   /* text stops where it ends; breathing space below */
 }
-.story .about-photo { margin-top: 0; width: 100%; max-width: none; aspect-ratio: auto; min-height: 320px; }
+.story .about-photo { margin-top: 0; width: 100%; max-width: none; aspect-ratio: 4 / 3; }
 .story-text { display: grid; gap: 20px; align-content: start; line-height: 30px; }
 .about-main .about-copy { margin-top: 64px; }
 @media (max-width: 760px) {
@@ -686,4 +686,17 @@ img { display: block; max-width: 100%; }
   .story .about-photo { min-height: 0; aspect-ratio: 688 / 311; }
   .story-text { line-height: 25px; gap: 16px; }
   .about-main .about-copy { margin-top: 40px; }
+}
+
+/* Caps: photo the same width as the text column, more copy under the caps text */
+.about-copy .caps { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 48px; max-width: none; }
+.about-copy .caps .caps-photo { width: 100%; }
+.caps-text { display: grid; gap: 20px; }
+.about-copy > .caps > .caps-text p { max-width: none; }
+/* Dawn Seal: light coral line above, in Dawn Seal's colour */
+.about-copy .dawn-row { border-top: 1px solid rgba(222, 90, 66, 0.35); padding-top: 40px; max-width: none; }
+@media (max-width: 760px) {
+  .about-copy .caps { grid-template-columns: minmax(0, 1fr); row-gap: 24px; }
+  .caps-text { gap: 16px; }
+  .about-copy .dawn-row { padding-top: 28px; }
 }
