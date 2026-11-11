@@ -94,3 +94,6 @@
 }
 .menu-x .food-row { margin-top: 56px; }
 .menu-intro { display: grid; gap: 4px; max-width: 720px; line-height: 30px; }
+
+/* Cup size on the name line, same weight as the name */
+.mi-size { margin-left: 8px; }
