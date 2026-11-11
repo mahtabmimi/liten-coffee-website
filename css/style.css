@@ -384,7 +384,7 @@ img { display: block; max-width: 100%; }
 .event.reverse .event-text { justify-self: start; }
 
 /* Footer ---------------------------------------------------------------- */
-.site-footer { background: var(--bg); }
+.site-footer { background: var(--bg); border-top: 1px solid var(--rule); } /* same light line as under the nav */
 .footer-grid {
   display: grid;
   grid-template-columns: 372px 318px 205px auto;
