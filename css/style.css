@@ -12,6 +12,11 @@
 }
 @font-face {
   font-family: 'Inter Display';
+  src: url('../assets/fonts/InterDisplay-Light.woff2') format('woff2');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Display';
   src: url('../assets/fonts/InterDisplay-SemiBold.woff2') format('woff2');
   font-weight: 600; font-style: normal; font-display: swap;
 }
@@ -284,13 +289,23 @@ img { display: block; max-width: 100%; }
   align-items: start;   /* text lines up with the top of the image */
   margin-top: 64px;
 }
+/* What's On title: large serif. Section labels: small light uppercase. */
+.whatson-main .page-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: 0;
+}
 .events-heading {
   margin-top: 48px;
   font-family: var(--sans);
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 30.8px;
-  color: var(--pill-text);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: var(--navy);
 }
 .events-heading.past { margin-top: 96px; padding-top: 48px; border-top: 1px solid var(--rule); }
 .events-heading + .event { margin-top: 32px; }
@@ -480,6 +495,7 @@ img { display: block; max-width: 100%; }
   .whatson-main .page-title { margin-top: 40px; }
   .event, .event.reverse { grid-template-columns: minmax(0, 1fr); row-gap: 24px; margin-top: 48px; }
   .events-heading { margin-top: 32px; }
+  .whatson-main .page-title { font-size: 42px; line-height: 46px; }
   .events-heading.past { margin-top: 56px; padding-top: 32px; }
   .events-heading + .event { margin-top: 20px; }
   .event + .event { margin-top: 40px; padding-top: 40px; }
