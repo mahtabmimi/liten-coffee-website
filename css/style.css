@@ -689,7 +689,7 @@ img { display: block; max-width: 100%; }
 }
 
 /* Caps: photo the same width as the text column, more copy under the caps text */
-.about-copy .caps { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 48px; max-width: none; }
+.about-copy .caps { grid-template-columns: minmax(0, 55%) minmax(0, 1fr); column-gap: 48px; max-width: none; } /* same columns as the story above */
 .about-copy .caps .caps-photo { width: 100%; }
 .caps-text { display: grid; gap: 20px; }
 .about-copy > .caps > .caps-text p { max-width: none; }
