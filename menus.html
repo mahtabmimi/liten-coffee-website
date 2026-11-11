@@ -296,46 +296,5 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script>
-/* Menu sections: one open per group, opening and closing slowly like a door easing shut */
-(function () {
-  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var DUR = reduce ? 0 : 360, EASE = 'cubic-bezier(.25, .8, .25, 1)';
-  var all = [].slice.call(document.querySelectorAll('details.menu-cat[name]'));
-  all.forEach(function (d) { d.dataset.group = d.getAttribute('name'); d.removeAttribute('name'); });
-  function body(d) { return d.querySelector('.menu-body'); }
-  function run(d, from, to, done) {
-    var b = body(d);
-    if (d._anim) d._anim.cancel();
-    if (!DUR || !b.animate) { done && done(); return; }
-    b.style.overflow = 'hidden';
-    b.style.willChange = 'height';
-    /* animate the padding too, otherwise it pops in or out at the end (the "bump") */
-    var cs = getComputedStyle(b), pt = cs.paddingTop, pb = cs.paddingBottom;
-    var shut = { height: '0px', paddingTop: '0px', paddingBottom: '0px', opacity: 0 };
-    var full = { height: (from || to) + 'px', paddingTop: pt, paddingBottom: pb, opacity: 1 };
-    d._anim = b.animate(from ? [full, shut] : [shut, full], { duration: DUR, easing: EASE });
-    d._anim.onfinish = function () { b.style.overflow = ''; b.style.willChange = ''; d._anim = null; done && done(); };
-  }
-  function close(d) {
-    if (!d.open || d._closing) return;
-    d._closing = true;
-    run(d, body(d).offsetHeight, 0, function () { d.open = false; d._closing = false; });
-  }
-  function open(d) {
-    d._closing = false;
-    d.open = true;
-    run(d, 0, body(d).offsetHeight);
-  }
-  all.forEach(function (d) {
-    d.querySelector('summary').addEventListener('click', function (e) {
-      e.preventDefault();
-      if (d.open && !d._closing) { close(d); return; }
-      all.forEach(function (o) { if (o !== d && o.dataset.group === d.dataset.group) close(o); });
-      open(d);
-    });
-  });
-})();
-</script>
 </body>
 </html>
