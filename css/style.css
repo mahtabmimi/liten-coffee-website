@@ -351,6 +351,7 @@ img { display: block; max-width: 100%; }
   color: #8A8A8A;
 }
 .event.reverse { grid-template-columns: minmax(0, 1fr) minmax(0, 470px); }
+.event + .event { border-top: 1px solid var(--rule); padding-top: 64px; } /* light line between events */
 .event.reverse .photo-placeholder { order: 2; }
 .event-text { display: grid; gap: 16px; max-width: 440px; }
 .event-text .body-20 { line-height: 30px; }
@@ -481,6 +482,7 @@ img { display: block; max-width: 100%; }
   .events-heading { margin-top: 32px; }
   .events-heading.past { margin-top: 56px; padding-top: 32px; }
   .events-heading + .event { margin-top: 20px; }
+  .event + .event { margin-top: 40px; padding-top: 40px; }
   .past-body { grid-template-columns: minmax(0, 1fr); row-gap: 16px; }
   .past-body .photo-placeholder, .past-body .poster { max-width: 320px; }
   .past-event summary { font-size: 20px; }
