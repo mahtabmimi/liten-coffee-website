@@ -388,7 +388,7 @@ img { display: block; max-width: 100%; }
 .footer-grid {
   display: grid;
   grid-template-columns: 372px 318px 205px auto;
-  padding: 45px 16px 72px 74px;
+  padding: 45px 16px 36px 74px;
 }
 .footer-col .footer-brand {
   font-family: var(--sans);
@@ -571,7 +571,7 @@ img { display: block; max-width: 100%; }
 
 /* Footer: two columns from small laptops down, so nothing runs off the side */
 @media (max-width: 900px) {
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px 24px; padding: 40px 48px 56px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px 24px; padding: 40px 48px 28px; }
   .footer-col:first-child,
   .footer-col:nth-child(2) { grid-column: 1 / -1; }   /* brand, then opening hours on their own rows */
   .footer-col:nth-child(4) { grid-column: 1; grid-row: 3; } /* find us, bottom left */
