@@ -84,7 +84,12 @@ img { display: block; max-width: 100%; }
 }
 .logo-link { display: block; flex: none; }
 .logo-link img { width: 157px; height: 58px; object-fit: cover; }
-.site-header:not(.compact) .logo-link { margin-top: 14px; } /* homepage logo, centred on the nav */
+/* Homepage header: divider sits close under the logo and nav */
+@media (min-width: 761px) {
+  .site-header:not(.compact) .header-inner { height: auto; padding-bottom: 6px; }
+  .site-header:not(.compact) .logo-link { margin-top: 6px; }
+  .site-header:not(.compact) .main-nav { padding-top: 26px; }
+}
 
 .main-nav {
   display: flex;
