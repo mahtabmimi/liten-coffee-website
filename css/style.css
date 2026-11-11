@@ -255,8 +255,15 @@ img { display: block; max-width: 100%; }
   aspect-ratio: 688 / 311;
   background: var(--placeholder);
 }
-.about-copy { margin-top: 45px; max-width: 624px; display: grid; gap: 36px; padding-bottom: 120px; }
-.caps { display: grid; gap: 24px; }
+.about-copy { margin-top: 45px; display: grid; gap: 36px; padding-bottom: 120px; }
+.about-copy > p { max-width: 624px; }
+/* Caps: text on the left, top-aligned with the photo on the right */
+.caps {
+  display: grid;
+  grid-template-columns: minmax(0, 624px) 300px;
+  column-gap: 64px;
+  align-items: start;
+}
 .caps-photo { width: 300px; max-width: 100%; height: auto; border-radius: 6px; }
 
 /* FAQs ------------------------------------------------------------------ */
@@ -480,6 +487,7 @@ img { display: block; max-width: 100%; }
   .menu-col .pill { margin-top: 20px; }
   .about-photo { margin-top: 32px; }
   .about-copy { margin-top: 32px; gap: 24px; padding-bottom: 72px; }
+  .caps { grid-template-columns: minmax(0, 1fr); row-gap: 24px; }
   .faq-layout { grid-template-columns: minmax(0, 1fr); padding-bottom: 72px; }
   .faq-list { margin-top: 28px; }
   .faq-list dt, .faq-list dd { line-height: 30px; }
