@@ -694,7 +694,8 @@ img { display: block; max-width: 100%; }
 .caps-text { display: grid; gap: 20px; }
 .about-copy > .caps > .caps-text p { max-width: none; }
 /* Dawn Seal: light coral line above, in Dawn Seal's colour */
-.about-copy .dawn-row { position: relative; margin-top: 36px; padding-top: 28px; max-width: none; } /* more space above the squiggle, less below */
+.about-copy .dawn-row { position: relative; margin-top: 84px; padding-top: 28px; max-width: none; } /* ~120px above the squiggle */
+.about-main .about-copy { padding-bottom: 72px; } /* less space between Dawn Seal and the footer */
 .about-copy .dawn-row::before {   /* hand-drawn style squiggle in Dawn Seal coral */
   content: "";
   position: absolute;
