@@ -631,3 +631,9 @@ img { display: block; max-width: 100%; }
   white-space: nowrap;
   pointer-events: none;
 }
+
+/* Phones: smaller body text so paragraphs aren't overwhelming */
+@media (max-width: 760px) {
+  .body-20, .body-21, .event-text .body-20, .past-text .body-20 { font-size: 17px; line-height: 25px; letter-spacing: 0.3px; }
+  .faq-list dt, .faq-list dd { font-size: 18px; line-height: 27px; }
+}
