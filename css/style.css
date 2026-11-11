@@ -595,6 +595,16 @@ img { display: block; max-width: 100%; }
 .pill.dawn img { width: 116px; height: auto; }
 .pill.dawn:hover, .pill.dawn:focus-visible { background: var(--pill-blue); }
 .dawn-row { display: grid; gap: 20px; justify-items: start; }
+/* About Us: text across ~78%, Dawn Seal pill on the right, centred against the text */
+@media (min-width: 761px) {
+  .about-copy .dawn-row {
+    max-width: 988px;
+    grid-template-columns: minmax(0, 78%) auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about-copy .dawn-row .pill { justify-self: end; margin-right: 56px; }
+}
 .event-text .pill.dawn { margin-top: 8px; }
 
 /* Placeholder watermark across photos (remove the wrapper when final photos arrive) */
