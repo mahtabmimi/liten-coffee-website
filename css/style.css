@@ -271,13 +271,23 @@ img { display: block; max-width: 100%; }
 .things .heading-sans { line-height: 27px; }
 .things ul { list-style: none; padding: 0; margin-top: 17px; }
 
-/* What's On ------------------------------------------------------------- */
-.whatson-line {
-  text-align: center;
-  font-size: 16px;
-  line-height: 19.2px;
-  padding-bottom: 240px;
+/* What's On ------------------------------------------------------------ */
+/* Same frame as Menus: title, then image + text rows that alternate sides */
+.whatson-main { padding-left: 66px; padding-right: 90px; padding-bottom: 120px; }
+.whatson-main .page-title { margin-top: 71px; }
+.event {
+  display: grid;
+  grid-template-columns: minmax(0, 470px) minmax(0, 1fr);
+  column-gap: 104px;
+  align-items: center;
+  margin-top: 64px;
 }
+.whatson-main .event:first-of-type { margin-top: 56px; }
+.event.reverse { grid-template-columns: minmax(0, 1fr) minmax(0, 470px); }
+.event.reverse .photo-placeholder { order: 2; }
+.event-text { display: grid; gap: 16px; max-width: 440px; }
+.event-text .body-20 { line-height: 30px; }
+.event.reverse .event-text { justify-self: start; }
 
 /* Footer ---------------------------------------------------------------- */
 .site-footer { background: var(--bg); }
@@ -322,7 +332,8 @@ img { display: block; max-width: 100%; }
   .header-inner { padding-left: 32px; padding-right: 32px; }
   .home-main { padding-left: 48px; padding-right: 48px; }
   .home-main .photo-row { column-gap: 6%; }
-  .menus-main { padding-left: 48px; padding-right: 48px; }
+  .menus-main, .whatson-main { padding-left: 48px; padding-right: 48px; }
+  .event { column-gap: 6%; }
   .menus-main .photo-row { column-gap: 6%; }
   .menu-col .pill { margin-left: 0 !important; }
   .menu-col { display: grid; justify-items: center; }
@@ -397,7 +408,12 @@ img { display: block; max-width: 100%; }
   .faq-list dt, .faq-list dd { line-height: 30px; }
   .faq-list dd { margin-bottom: 12px; }
   .things { margin-top: 32px; }
-  .whatson-line { padding: 32px 20px 160px; }
+  .whatson-main { padding-left: 20px; padding-right: 20px; padding-bottom: 72px; }
+  .whatson-main .page-title { margin-top: 40px; }
+  .event, .event.reverse { grid-template-columns: minmax(0, 1fr); row-gap: 24px; margin-top: 48px; }
+  .whatson-main .event:first-of-type { margin-top: 32px; }
+  .event.reverse .photo-placeholder { order: 0; }   /* image first on phones */
+  .event.reverse .event-text { justify-self: start; }
 }
 
 
