@@ -117,4 +117,5 @@
 @media (max-width: 760px) {
   .menus-top { grid-template-columns: minmax(0, 1fr); }
   .menus-photo { margin-top: 24px; width: 100%; height: auto; aspect-ratio: 16 / 10; }
+  .menus-top .menu-intro { line-height: 25px; }
 }
