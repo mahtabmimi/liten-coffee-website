@@ -589,3 +589,21 @@ img { display: block; max-width: 100%; }
 .pill.dawn:hover, .pill.dawn:focus-visible { background: var(--pill-blue); }
 .dawn-row { display: grid; gap: 20px; justify-items: start; }
 .event-text .pill.dawn { margin-top: 8px; }
+
+/* Placeholder watermark across photos (remove the wrapper when final photos arrive) */
+.watermark { position: relative; overflow: hidden; border-radius: 6px; }
+.watermark::after {
+  content: attr(data-watermark);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-32deg);
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(28px, 8vw, 54px);
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 1px 6px rgba(2, 55, 105, 0.35);
+  white-space: nowrap;
+  pointer-events: none;
+}
