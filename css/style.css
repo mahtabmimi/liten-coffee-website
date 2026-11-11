@@ -281,7 +281,7 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: minmax(0, 470px) minmax(0, 1fr);
   column-gap: 104px;
-  align-items: center;
+  align-items: start;   /* text lines up with the top of the image */
   margin-top: 64px;
 }
 .events-heading {
