@@ -136,13 +136,14 @@ img { display: block; max-width: 100%; }
 .site-header.compact { border-bottom: 1px solid var(--rule); } /* full-width divider */
 
 /* Type styles ----------------------------------------------------------- */
-.page-title {
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 27px;
-  line-height: 37.8px;
-  letter-spacing: 0.81px;
+.page-title {               /* serif page titles, as on What's On */
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: 0;
 }
+.faq-main .page-title { font-size: 40px; line-height: 44px; } /* long title, kept smaller */
 .gloss {
   font-family: var(--serif);
   font-style: italic;
@@ -289,14 +290,7 @@ img { display: block; max-width: 100%; }
   align-items: start;   /* text lines up with the top of the image */
   margin-top: 64px;
 }
-/* What's On title: large serif. Section labels: small light uppercase. */
-.whatson-main .page-title {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 56px;
-  letter-spacing: 0;
-}
+/* What's On section labels: small light uppercase */
 .events-heading {
   margin-top: 48px;
   font-family: var(--sans);
@@ -495,7 +489,8 @@ img { display: block; max-width: 100%; }
   .whatson-main .page-title { margin-top: 40px; }
   .event, .event.reverse { grid-template-columns: minmax(0, 1fr); row-gap: 24px; margin-top: 48px; }
   .events-heading { margin-top: 32px; }
-  .whatson-main .page-title { font-size: 42px; line-height: 46px; }
+  .page-title { font-size: 42px; line-height: 46px; }
+  .faq-main .page-title { font-size: 34px; line-height: 38px; }
   .events-heading.past { margin-top: 56px; padding-top: 32px; }
   .events-heading + .event { margin-top: 20px; }
   .event + .event { margin-top: 40px; padding-top: 40px; }
