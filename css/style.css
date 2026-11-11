@@ -202,14 +202,18 @@ img { display: block; max-width: 100%; }
 }
 
 /* Home ------------------------------------------------------------------ */
-.home-hero {
-  padding-top: 86px; /* text top at 179 */
-  text-align: center;
-  font-size: 24px;
-  line-height: 28.8px;
-  letter-spacing: 0.96px;
+.home-hero {               /* opening statement: large italic serif, two balanced lines */
+  max-width: 880px;
+  margin: 0 auto;
+  padding-top: 80px;
   padding-left: 16px;
   padding-right: 16px;
+  text-align: center;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0;
+  text-wrap: balance;
 }
 .home-main { padding-left: 88px; padding-right: 75px; }
 .home-main .photo-row:first-child { margin-top: 61px; } /* images at 269 */
@@ -473,7 +477,7 @@ img { display: block; max-width: 100%; }
   .main-nav a { font-size: 19px; line-height: 24px; }
   .squiggle { top: 26px; }
 
-  .home-hero { padding: 40px 20px 0; font-size: 22px; line-height: 28px; letter-spacing: 0.6px; }
+  .home-hero { padding: 40px 20px 0; font-size: 30px; line-height: 36px; }
   .home-main, .menus-main, .inner-main { padding-left: 20px; padding-right: 20px; }
   .photo-row, .menus-main .photo-row { grid-template-columns: minmax(0, 1fr); row-gap: 20px; }
   .home-main .photo-row:first-child { margin-top: 36px; }
