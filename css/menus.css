@@ -92,7 +92,7 @@
   line-height: 22px;
   color: var(--pill-text);
 }
-.menu-x .food-row { margin-top: 56px; }
+.menu-x .food-row { margin-top: 56px; display: block; } /* text only, no photo */
 .menu-intro { display: grid; gap: 4px; max-width: 720px; line-height: 30px; }
 
 /* Title and intro on the left, photo top right */
