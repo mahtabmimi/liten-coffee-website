@@ -250,6 +250,8 @@ img { display: block; max-width: 100%; }
   background: var(--placeholder);
 }
 .about-copy { margin-top: 45px; max-width: 624px; display: grid; gap: 36px; padding-bottom: 120px; }
+.caps { display: grid; gap: 24px; }
+.caps-photo { width: 300px; max-width: 100%; height: auto; border-radius: 6px; }
 
 /* FAQs ------------------------------------------------------------------ */
 .faq-layout {
