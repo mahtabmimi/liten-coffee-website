@@ -75,7 +75,14 @@
 
 /* Food */
 .menu-x .food-row { margin-top: 32px; }
-.menu-x .food-row .event-text { gap: 24px; justify-items: start; }
+.menu-x .food-row .event-text { gap: 16px; justify-items: start; max-width: none; }
+.menu-x .food-row .body-20 {   /* sans-serif, full width */
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+}
 
 @media (max-width: 760px) {
   .menu-list { columns: 1; }
@@ -125,4 +132,5 @@
   .menus-top { grid-template-columns: minmax(0, 1fr); }
   .menus-photo { margin-top: 24px; width: 100%; height: auto; aspect-ratio: 16 / 10; }
   .menus-top .menu-intro { font-size: 15px; line-height: 23px; }
+  .menu-x .food-row .body-20 { font-size: 15px; line-height: 23px; }
 }
