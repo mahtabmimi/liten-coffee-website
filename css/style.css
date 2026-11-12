@@ -708,3 +708,18 @@ img { display: block; max-width: 100%; }
   .caps-text { gap: 16px; }
   .about-copy .dawn-row { margin-top: 16px; padding-top: 22px; }
 }
+
+/* Desktop: the squiggle draws itself in on hover, and rubs out when you move away */
+.squiggle path { stroke-dasharray: 1 1.1; stroke-dashoffset: 0; }
+@media (hover: hover) and (min-width: 761px) {
+  .main-nav a .squiggle { opacity: 1; transition: none; }
+  .main-nav a:not([aria-current="page"]) .squiggle path {
+    stroke-dashoffset: 1.05;
+    transition: stroke-dashoffset 0.55s cubic-bezier(.45, 0, .2, 1);
+  }
+  .main-nav a:not([aria-current="page"]):hover .squiggle path,
+  .main-nav a:not([aria-current="page"]):focus-visible .squiggle path { stroke-dashoffset: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .main-nav a .squiggle path { transition: none !important; }
+}
